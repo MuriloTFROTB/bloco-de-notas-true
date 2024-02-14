@@ -9,7 +9,7 @@
   text-align: center;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 15px;
 }
 .header-card h2 {
   font-weight: 400;
