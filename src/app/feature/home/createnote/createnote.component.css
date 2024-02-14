@@ -1,0 +1,112 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 608px;
+  margin: 0px auto;
+  padding: 0px 8px;
+}
+.header-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.header-card h2 {
+  font-weight: 400;
+  font-size: 15px;
+}
+.mainFont {
+  font-size: 14px;
+  font-weight: 500;
+}
+.card-input input {
+  width: 100%;
+  padding: 8px 8px;
+  border-radius: 5px;
+  border: 1px solid #c0c0c0;
+}
+.card-text {
+  margin-top: 8px;
+}
+#texarea {
+  border: 1px solid #c0c0c0;
+  border-radius: 5px;
+  max-width: 100%;
+  width: 100%;
+  height: max-content;
+  padding: 2px 8px;
+}
+.card-category {
+  margin: 32px 0px;
+}
+.card-category h1 {
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+.list-category {
+  display: flex;
+  gap: 8px;
+}
+
+.item-category {
+  background-color: #eeeeee;
+  cursor: pointer;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  font-size: 14px;
+}
+.item-category:hover {
+  transform: scale(1.1);
+}
+.saved-notes {
+  text-align: center;
+}
+.saved-notes h1{
+  margin-bottom: 16px;
+}
+.saved-notes h2 {
+  font-weight: 400;
+  font-size: 15px;
+  margin-bottom: 16px;
+}
+.saved-note {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid;
+  margin-bottom: 16px;
+  padding: 4px;
+  border-radius: 5px;
+  background-color: rgb(246, 255, 0);
+}
+.saved-note p {
+  text-align: start;
+  text-align: justify;
+}
+.card-button {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+  margin-bottom: 80px;
+}
+.button {
+  border: none;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+.button h1 {
+  padding: 12px 32px;
+  border-radius: 5px;
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  font-weight: 400;
+}
+.button:hover {
+  transform: scale(1.1);
+  border: none;
+}
+.clicado {
+  background-color: black;
+}
