@@ -16,15 +16,20 @@ export class CreatenoteComponent {
   title: string = '';
   constructor(
     private cookieService: CookieServices,
-    private noteUpdatedService: NoteUpdateService,
+    private noteUpdatedService: NoteUpdateService
   ) {}
   @ViewChild('myTextarea') myTextareaRef!: ElementRef;
 
   saveNote() {
     const textareaValue = this.myTextareaRef.nativeElement.value;
+    if (!textareaValue.trim() && !this.title.trim()) {
+      window.alert(
+        'Por favor, insira um titulo ou texto para que seja adicionado'
+      );
+      return;
+    }
     this.cookieService.setNote(this.title, textareaValue);
     this.noteUpdatedService.notifyNoteUpdated();
-    window.alert('nota criada')
+    window.alert('nota criada');
   }
-  
 }

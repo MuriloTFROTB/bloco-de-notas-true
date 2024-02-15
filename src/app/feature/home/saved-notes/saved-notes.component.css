@@ -27,6 +27,7 @@
     width: 270px;
     height: 250px;
     overflow: auto;
+    border: 1px solid black;
   }
   .saved-note p {
     text-align: start;
