@@ -3,7 +3,8 @@
   flex-direction: column;
   max-width: 608px;
   margin: 0px auto;
-  padding: 0px 8px;
+  padding: 60px 8px 0px 8px;
+  height: 100dvh;
 }
 .header-card {
   text-align: center;
@@ -24,6 +25,7 @@
   padding: 8px 8px;
   border-radius: 5px;
   border: 1px solid #c0c0c0;
+  background-color: #d3eafd;
 }
 .card-text {
   margin-top: 8px;
@@ -35,6 +37,7 @@
   width: 100%;
   height: max-content;
   padding: 2px 8px;
+  background-color: #d3eafd;
 }
 .card-category {
   margin: 32px 0px;
@@ -109,4 +112,7 @@
 }
 .clicado {
   background-color: black;
+}
+.color-font{
+  color: var(--cor-fonte);
 }

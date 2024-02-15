@@ -1,0 +1,8 @@
+<div class="saved-notes">
+    <h1 class="fontHeader">My Notes</h1>
+    <h2>Saved notes</h2>
+    <div *ngFor="let note of savedNotes" class="saved-note">
+      <h3>{{ note.title }}</h3>
+      <p>{{ note.text }}</p>
+    </div>
+  </div>

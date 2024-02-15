@@ -1,15 +1,15 @@
 <div class="container">
   <div class="header-card">
-    <h1 class="fontHeader">New Note</h1>
-    <h2>Create a new note</h2>
+    <h1 class="fontHeader color-font">New Note</h1>
+    <h2 class="color-font">Create a new note</h2>
   </div>
   <div class="body-card">
     <div class="card-input">
-      <h1 class="mainFont">Title</h1>
+      <h1 class="mainFont color-font">Title</h1>
       <input type="text" placeholder="Enter title" [(ngModel)]="title" />
     </div>
     <div class="card-text">
-      <h1 class="mainFont">Text</h1>
+      <h1 class="mainFont color-font">Text</h1>
       <textarea
         name="texarea"
         id="texarea"
@@ -22,14 +22,6 @@
       <button class="button" (click)="saveNote()">
         <h1>Add Note</h1>
       </button>
-    </div>
-    <div *ngIf="showSavedNotes" class="saved-notes">
-      <h1 class="fontHeader">My Notes</h1>
-      <h2>Saved notes</h2>
-      <div *ngFor="let note of savedNotes" class="saved-note">
-        <h3>{{ note.title }}</h3>
-        <p>{{ note.text }}</p>
-      </div>
     </div>
     <!-- <div class="card-category">
         <h1>Categoty</h1>

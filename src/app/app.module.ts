@@ -10,6 +10,8 @@ import { CookieService } from 'ngx-cookie-service';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { TopBarComponent } from './core/components/top-bar/top-bar.component';
+import { SavedNotesComponent } from './feature/home/saved-notes/saved-notes.component';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
@@ -17,11 +19,15 @@ import { TopBarComponent } from './core/components/top-bar/top-bar.component';
     HomeComponent,
     LoginComponent,
     CreatenoteComponent,
-    TopBarComponent
+    TopBarComponent,
+    SavedNotesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    ToastrModule.forRoot()
   ],
   providers: [
     provideClientHydration(),CookieService

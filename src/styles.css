@@ -8,3 +8,14 @@
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
 }
+:root {
+  --cor-primaria: #007bff;
+  --cor-secundaria: #1465bb;
+  --cor-bloco-de-notas: #eaf321;
+  --cor-fonte: #001635;
+}
+
+/* Aplicando o estilo ao body */
+body {
+  background-color: var(--cor-primaria); /* Usando a variável --cor-primaria */
+}

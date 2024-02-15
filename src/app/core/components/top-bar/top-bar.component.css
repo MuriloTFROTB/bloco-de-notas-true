@@ -1,10 +1,18 @@
 .container{
-    box-shadow: 1px 1px 2px rgb(216, 215, 215);
+    box-shadow: 1px 1px 2px #d3eafd;
     height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     padding: 8px 16px;
-    margin-bottom: 60px;
+    background-color: var(--cor-secundaria);
+}
+.card-left{
+    display: flex;
+    align-items: center;
+}
+.card-left h1{
+    color: var(--cor-fonte);
 }
 .card-picture{
     background-color: orange;
@@ -12,4 +20,15 @@
     width: 40px;
     border-radius: 100px;
     margin-right: 16px;
+}
+.dark-mode {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, border 0.3s ease;
+    
+}
+
+.dark-mode:hover {
+    border: 1px solid;
+    transform: scale(1.2);
 }
